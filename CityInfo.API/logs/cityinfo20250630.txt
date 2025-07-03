@@ -1,0 +1,67 @@
+2025-06-30 23:55:32.950 +03:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-06-30 23:55:33.241 +03:30 [DBG] Hosting starting
+2025-06-30 23:55:33.401 +03:30 [INF] Now listening on: http://localhost:5062
+2025-06-30 23:55:33.406 +03:30 [DBG] Loaded hosting startup assembly CityInfo.API
+2025-06-30 23:55:33.411 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-30 23:55:33.417 +03:30 [INF] Hosting environment: Development
+2025-06-30 23:55:33.418 +03:30 [DBG] Connection id "0HNDO2H1U256U" accepted.
+2025-06-30 23:55:33.425 +03:30 [INF] Content root path: D:\DotNet-Dore\CityInfo.API\CityInfo.API
+2025-06-30 23:55:33.436 +03:30 [DBG] Connection id "0HNDO2H1U256U" started.
+2025-06-30 23:55:33.438 +03:30 [DBG] Connection id "0HNDO2H1U256V" accepted.
+2025-06-30 23:55:33.439 +03:30 [DBG] Hosting started
+2025-06-30 23:55:33.454 +03:30 [DBG] Connection id "0HNDO2H1U256V" started.
+2025-06-30 23:55:33.574 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5062/swagger/index.html - null null
+2025-06-30 23:55:33.593 +03:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-06-30 23:55:33.763 +03:30 [DBG] Connection id "0HNDO2H1U256U" completed keep alive response.
+2025-06-30 23:55:33.773 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5062/swagger/index.html - 200 null text/html;charset=utf-8 222.8643ms
+2025-06-30 23:55:36.867 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5062/swagger/v1/swagger.json - null null
+2025-06-30 23:55:37.376 +03:30 [DBG] Connection id "0HNDO2H1U256U" completed keep alive response.
+2025-06-30 23:55:37.379 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5062/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 513.2829ms
+2025-06-30 23:55:47.217 +03:30 [DBG] Connection id "0HNDO2H1U2570" accepted.
+2025-06-30 23:55:47.220 +03:30 [DBG] Connection id "0HNDO2H1U2570" received FIN.
+2025-06-30 23:55:47.220 +03:30 [DBG] Connection id "0HNDO2H1U2570" started.
+2025-06-30 23:55:47.220 +03:30 [DBG] Connection id "0HNDO2H1U2571" accepted.
+2025-06-30 23:55:47.229 +03:30 [DBG] Connection id "0HNDO2H1U2570" disconnecting.
+2025-06-30 23:55:47.229 +03:30 [DBG] Connection id "0HNDO2H1U2571" started.
+2025-06-30 23:55:47.240 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5062/api/cities - null null
+2025-06-30 23:55:47.247 +03:30 [DBG] Connection id "0HNDO2H1U2570" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-30 23:55:47.259 +03:30 [DBG] Connection id "0HNDO2H1U2570" stopped.
+2025-06-30 23:55:47.263 +03:30 [DBG] The request path  does not match the path filter
+2025-06-30 23:55:47.274 +03:30 [WRN] Failed to determine the https port for redirect.
+2025-06-30 23:55:47.390 +03:30 [DBG] 1 candidate(s) found for the request path '/api/cities'
+2025-06-30 23:55:47.413 +03:30 [DBG] Endpoint 'CityInfo.API.Controllers.CitiesController.GetCities (CityInfo.API)' with route pattern 'api/Cities' is valid for the request path '/api/cities'
+2025-06-30 23:55:47.422 +03:30 [DBG] Request matched endpoint 'CityInfo.API.Controllers.CitiesController.GetCities (CityInfo.API)'
+2025-06-30 23:55:47.435 +03:30 [INF] Executing endpoint 'CityInfo.API.Controllers.CitiesController.GetCities (CityInfo.API)'
+2025-06-30 23:55:47.545 +03:30 [INF] Route matched with {action = "GetCities", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CityInfo.API.Models.CityDto]] GetCities() on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2025-06-30 23:55:47.576 +03:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-06-30 23:55:47.580 +03:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-06-30 23:55:47.586 +03:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-06-30 23:55:47.591 +03:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-06-30 23:55:47.595 +03:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-06-30 23:55:47.607 +03:30 [DBG] Executing controller factory for controller CityInfo.API.Controllers.CitiesController (CityInfo.API)
+2025-06-30 23:55:47.621 +03:30 [DBG] Executed controller factory for controller CityInfo.API.Controllers.CitiesController (CityInfo.API)
+2025-06-30 23:55:47.662 +03:30 [INF] Executing action method CityInfo.API.Controllers.CitiesController.GetCities (CityInfo.API) - Validation state: "Valid"
+2025-06-30 23:55:47.687 +03:30 [INF] Executed action method CityInfo.API.Controllers.CitiesController.GetCities (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2.4355ms.
+2025-06-30 23:55:47.711 +03:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2025-06-30 23:55:47.725 +03:30 [DBG] No information found on request to perform content negotiation.
+2025-06-30 23:55:47.729 +03:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-06-30 23:55:47.732 +03:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-06-30 23:55:47.736 +03:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-06-30 23:55:47.742 +03:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CityInfo.API.Models.CityDto, CityInfo.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-30 23:55:48.162 +03:30 [INF] Executed action CityInfo.API.Controllers.CitiesController.GetCities (CityInfo.API) in 552.8206ms
+2025-06-30 23:55:48.167 +03:30 [INF] Executed endpoint 'CityInfo.API.Controllers.CitiesController.GetCities (CityInfo.API)'
+2025-06-30 23:55:48.170 +03:30 [DBG] Connection id "0HNDO2H1U2571" completed keep alive response.
+2025-06-30 23:55:48.174 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5062/api/cities - 200 746 application/json; charset=utf-8 934.4753ms
+2025-06-30 23:56:55.827 +03:30 [DBG] Connection id "0HNDO2H1U256V" received FIN.
+2025-06-30 23:56:55.830 +03:30 [DBG] Connection id "0HNDO2H1U256V" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-30 23:56:55.835 +03:30 [DBG] Connection id "0HNDO2H1U256V" disconnecting.
+2025-06-30 23:56:55.841 +03:30 [DBG] Connection id "0HNDO2H1U256V" stopped.
+2025-06-30 23:57:48.398 +03:30 [DBG] Connection id "0HNDO2H1U256U" disconnecting.
+2025-06-30 23:57:48.404 +03:30 [DBG] Connection id "0HNDO2H1U256U" stopped.
+2025-06-30 23:57:48.411 +03:30 [DBG] Connection id "0HNDO2H1U256U" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-30 23:57:58.401 +03:30 [DBG] Connection id "0HNDO2H1U2571" disconnecting.
+2025-06-30 23:57:58.410 +03:30 [DBG] Connection id "0HNDO2H1U2571" stopped.
+2025-06-30 23:57:58.418 +03:30 [DBG] Connection id "0HNDO2H1U2571" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-30 23:59:08.964 +03:30 [INF] Application is shutting down...
+2025-06-30 23:59:08.971 +03:30 [DBG] Hosting stopping
+2025-06-30 23:59:09.030 +03:30 [DBG] Hosting stopped

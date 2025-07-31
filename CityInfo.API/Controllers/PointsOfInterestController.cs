@@ -70,6 +70,9 @@ public class PointsOfInterestController : ControllerBase
         var pointOfInterest = await _cityInfoRepository
             .GetPointsOfInterestForCityAsync(cityId, pointOfInterestId);
 
+        
+        // If point of interest is null, return NotFoundگ
+        
         if (pointOfInterest == null)
         {
             return NotFound();
@@ -180,28 +183,35 @@ public class PointsOfInterestController : ControllerBase
     #endregion
     
     #region Delete
+    
 
     [HttpDelete("{pointOfInterestId}")]
-    public ActionResult DeletePointOfInterest(
+    public async Task<ActionResult> DeletePointOfInterest(
         int cityId,
         int pointOfInterestId)
     {
+        if (!await _cityInfoRepository.CityExistAsync(cityId))
+        {
+            return NotFound();
+        }
+
+        var pointOfInterestEntity =
+            await _cityInfoRepository
+                .GetPointsOfInterestForCityAsync(cityId, pointOfInterestId);
+
+        if (pointOfInterestEntity == null)
+        {
+            return NotFound();
+        }
         
-        var city = citiesDataStore.Cities.FirstOrDefault(c => c.Id == cityId);
-        if (city == null)
-        {
-            return NotFound();
-        }
-        var point = city.PointOfInterest.FirstOrDefault(p => p.Id == pointOfInterestId);
-        if (point == null)
-        {
-            return NotFound();
-        }
-        city.PointOfInterest.Remove(point);
+        
+        _cityInfoRepository.DeletePointOfInterest(pointOfInterestEntity);
+        await _cityInfoRepository.SaveChangesAsync();
+        
         _localMailService
             .Send(
                 "Point Of Interest deleted",
-                $"Point Of Interest {point.Name} with id {point.Id} "
+                $"Point Of Interest {pointOfInterestEntity.Name} with id {pointOfInterestEntity.Id} "
                 );
         return NoContent();
     }

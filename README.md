@@ -28,5 +28,5 @@ City Info API is designed for developers who need a simple, scalable, and well-s
 ### 📥 Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/CityInfo.API.git
+git clone https://github.com/IImAriyan/ASP.NET-Course-Project-1.git
 cd CityInfo.API
